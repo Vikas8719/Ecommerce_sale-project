@@ -9,7 +9,7 @@ st.set_page_config(page_title="AI-Driven E-commerce Dashboard", layout="wide")
 # ============ Load Data ============
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/Ecommerce_Sales_Data_2024_2025.csv")
+    return pd.read_csv("data/cleaned_ecommerce_data.csv")
 
 @st.cache_resource
 def load_model():
